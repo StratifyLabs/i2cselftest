@@ -1,0 +1,17 @@
+{
+    "LocalBuild": "build_release_armv7m",
+    "LocalInstallPath": "/app/.install",
+    "LocalIsRam": false,
+    "LocalIsStartup": false,
+    "LocalProjectId": "",
+    "buildprefix": "build_",
+    "description": "i2cselftest is a utility for testing the I2C driver. The master port is connected to the slave port to run the test.",
+    "github": "https://github.com/StratifyLabs/HelloWorld",
+    "hardwareid": "",
+    "name": "i2cselftest",
+    "publisher": "Stratify Labs, Inc",
+    "ram": 8192,
+    "tags": "demo",
+    "type": "StratifyApp",
+    "version": "0.1"
+}
