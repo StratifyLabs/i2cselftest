@@ -38,7 +38,7 @@ int main(int argc, char * argv[]){
 	slave.reset();
 	master.reset();
 
-	if( slave.slave_setup(0x4C, slave_regs, SLAVE_REG_SMALL_SIZE) <  0 ){
+	if( slave.setup_slave(0x4C, slave_regs, SLAVE_REG_SMALL_SIZE) <  0 ){
 		perror("failed to setup slave");
 		exit(1);
 	}
@@ -53,7 +53,7 @@ int main(int argc, char * argv[]){
 	test_master_read(SLAVE_REG_SMALL_SIZE);
 	printf("Small read test complete\n");
 
-	if( slave.slave_setup(0x4C, slave_regs, SLAVE_REG_SIZE) <  0 ){
+	if( slave.setup_slave(0x4C, slave_regs, SLAVE_REG_SIZE) <  0 ){
 		perror("failed to setup slave");
 		exit(1);
 	}
